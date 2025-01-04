@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Center - Obeid iStore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            margin: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .hover {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hover a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hover a img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .hover p {
+            margin: 0;
+            color: black;
+        }
+
+        .hover #white{
+            color: white;
+        }
+
+        .hover .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hover .dropdown .main-image {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .hover .dropdown .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 70px;
+            transform: translateY(-50%);
+            background-color: white;
+            border-radius: 8px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            white-space: nowrap;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .hover .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #333;
+            text-decoration: none;
+            background-color: white;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+
+        .para {
+            max-width: 600px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 18px;
+            color: #000;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        li i {
+            margin-right: 10px;
+            font-size: 24px;
+            color: #3498db;
+        }
+
+        li:hover {
+            background-color: #ecf0f1;
+            transform: translateX(10px);
+        }
+
+        li:hover i {
+            color: #2980b9;
+        }
+
+        ul li a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            gap: 2rem;
+            margin-top: 20px;
+        }
+
+        .service {
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .service img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            font-size: 1.2rem;
+            margin: 0;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        footer {
+            margin: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="obeid.jpg" alt="Obeid iStore Logo" class="logo">
+        <h1>Apple Center</h1>
+        <p>@Obeidapplecenter</p>
+    </header>
+
+    <div class="buttons">
+        <div class="hover">
+            <a href="Https://wa.me/+255674522566" target="_blank">
+                <img src="whatsapp.png" alt="Image">
+                <p id="white">Whatsapp</p>
+            </a>
+        </div>
+        <div class="hover">
+            <a href="Https://instagram.com/obeid_istore?r=nametag" target="_blank">
+                <img src="ig.png" alt="Image">
+                <p id="white">Instagram</p>
+            </a>
+        </div>
+        <div class="hover">
+            <div class="dropdown">
+                <img src="location.png" alt="Image" class="main-image">
+                <p id="white">Location</p>
+                <div class="dropdown-menu">
+                    <a href="https://www.google.com/maps/place/3%C2%B021'04.3%22S+37%C2%B020'33.4%22E/@-3.3511638,37.3430106,18z/data=!4m4!3m3!8m2!3d-3.351196!4d37.3426?authuser=0"
+                        target="_blank">
+                        <p>Moshi</p>
+                    </a>
+                    </a>
+                    <a href="https://maps.app.goo.gl/ks3WMPG2moRpirGz6" target="_blank">
+                        <p>Dar es Salaam</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="para">
+        <ul>
+            <li><i class="fas fa-apple"></i> Apple Products & Services</li>
+            <li><i class="fas fa-cogs"></i> Hardware & Software Repairing</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="services">
+            <div class="service">
+                <img src="iphone.png" alt="iPhone">
+                <p>iPhone</p>
+            </div>
+            <div class="service">
+                <img src="Airpods.png" alt="Gadgets">
+                <p>Gadgets</p>
+            </div>
+            <div class="service">
+                <img src="apple.png" alt="">
+                <img src="repair.png" alt="Repair Service">
+                <p>Repair Service</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Unique Products & Services</p>
+    </footer>
+
+</body>
+
+</html>
