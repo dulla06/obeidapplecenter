@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Center - Obeid iStore</title>
+    <title>Obeid Apple Center</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -65,7 +65,7 @@
             color: black;
         }
 
-        .hover #white{
+        .hover #white {
             color: white;
         }
 
@@ -84,13 +84,13 @@
         .hover .dropdown .dropdown-menu {
             display: none;
             position: absolute;
-            top: 50%;
-            left: 70px;
-            transform: translateY(-50%);
+            top: 100%; /* Position below the image */
+            left: 50%; /* Center with respect to the image */
+            transform: translateX(-50%); /* Adjust centering */
             background-color: white;
             border-radius: 8px;
             list-style-type: none;
-            margin: 0;
+            margin: 10px 0; /* Add margin for spacing */
             padding: 0;
             white-space: nowrap;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -116,7 +116,7 @@
 
         .para {
             max-width: 600px;
-            margin: 10px auto;
+            margin: 35px auto 10px;
             padding: 20px;
             background-color: #fff;
             border-radius: 10px;
@@ -222,12 +222,6 @@
             </a>
         </div>
         <div class="hover">
-            <a href="Https://instagram.com/obeid_istore?r=nametag" target="_blank">
-                <img src="ig.png" alt="Image">
-                <p id="white">Instagram</p>
-            </a>
-        </div>
-        <div class="hover">
             <div class="dropdown">
                 <img src="location.png" alt="Image" class="main-image">
                 <p id="white">Location</p>
@@ -242,6 +236,12 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="hover">
+            <a href="Https://instagram.com/obeid_istore?r=nametag" target="_blank">
+                <img src="ig.png" alt="Image">
+                <p id="white">Instagram</p>
+            </a>
         </div>
     </div>
 
